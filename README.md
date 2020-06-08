@@ -38,7 +38,7 @@ Class NameOfProgramWindow extends MouseGestureWindow {...}
 
 In this class, each gesture is defined as a function. 
 The function naming syntax can be described with the following regular expression `(LButton)?RButton_[ULRD]*(_((RButton)|(MButton)|(XButton1)|(XButton2)|(WheelUp)|(WheelDown)))?`. 
-> Note: This is subject to change for future version. It could for example be nice to have support for keyboard buttons as well, or for using other buttons than RButton for the gesture
+> Note: This is subject to change for future versions. It could for example be nice to have support for keyboard buttons as well, or for using other buttons than RButton for the gestures
 
 The function body can contain anything that a regular autohotkey script can. One recommendation, however, is to start the function with `this.start_window.Focus()`, to ensure that any commands sent are received by the correct window. 
 
@@ -83,7 +83,7 @@ Class NameOfProgramWindow extends MouseGestureWindow {
 ```
 
 
-**2. Add a condition to `GetMouseGestureWindow()` for when to use the afforementioned class. **
+**2. Add a condition to `GetMouseGestureWindow()` for when to use the afforementioned class.**
 
 The `GetMouseGestureWindow()` function looks like this
 ```autohotkey
